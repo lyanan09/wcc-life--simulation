@@ -17,7 +17,7 @@ let sizes = [unit / 5, unit / 3];
 let saveInterval = 60; // auto save screenshot interval (s
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(500, 500);
   background(15, 12, 22);
   
   for(let i=0; i<groupNums; i++) {
@@ -34,9 +34,9 @@ function setup() {
   }
   
   // auto save current canvas
-  setInterval(() => {
-    save("screenshot.png");
-  }, 1000 * saveInterval);
+  // setInterval(() => {
+  //   save("screenshot.png");
+  // }, 1000 * saveInterval);
 }
 
 function draw() {

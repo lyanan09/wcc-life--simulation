@@ -6,3 +6,8 @@ canvas {
   display: block;
   margin: auto;
 }
+.title {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+}
