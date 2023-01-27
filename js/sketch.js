@@ -16,8 +16,13 @@ let unit = (Math.PI ** ((1 + Math.sqrt(5)) / 2));
 let sizes = [unit / 5, unit / 3];
 let saveInterval = 60; // auto save screenshot interval (s
 
+let cnv;
+
 function setup() {
-  createCanvas(500, 500);
+  cnv = createCanvas(500, 500);
+  cnv.parent('sketch-holder');
+  responsiveCanvas();
+
   background(15, 12, 22);
   
   for(let i=0; i<groupNums; i++) {
@@ -51,5 +56,19 @@ function keyPressed({key}) {
   if (key === 's') {
     save("screenshot.png");
   }
+}
+
+function responsiveCanvas() {
+  if(windowWidth < 500) {
+    background(15, 12, 22);
+    resizeCanvas(windowWidth, windowWidth);
+  }
+  let x = (windowWidth - width)/2;
+  let y = (windowHeight - height)/2;
+  cnv.position(x,y);
+}
+
+function windowResized() {
+  responsiveCanvas();
 }
 

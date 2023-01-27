@@ -4,7 +4,7 @@ html, body {
 }
 canvas {
   display: block;
-  margin: auto;
+  /* margin: auto; */
 }
 .title {
   font-size: 36px;
