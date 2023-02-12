@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgb(15, 12, 22);
 }
 canvas {
   display: block;
@@ -10,4 +11,10 @@ canvas {
   font-size: 36px;
   text-align: center;
   padding: 20px;
+}
+
+header a {
+  color: white;
+  padding: 10px 16px;
+  display: inline-block;
 }
