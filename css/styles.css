@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgb(15, 12, 22);
+  font-family: Verdana, sans-serif;
 }
 canvas {
   display: block;
@@ -17,4 +18,17 @@ header a {
   color: white;
   padding: 10px 16px;
   display: inline-block;
+}
+
+nav {
+  padding: 10px 3%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: grey;
 }
